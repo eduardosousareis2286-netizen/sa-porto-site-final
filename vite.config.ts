@@ -1,4 +1,3 @@
-
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import fs from "node:fs";
@@ -6,7 +5,9 @@ import path from "path";
 import { defineConfig } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
-const plugins = [react(), tailwindcss(), vitePluginManusRuntime()];
+// A linha do jsxLocPlugin foi removida
+
+const plugins = [react(), tailwindcss(), vitePluginManusRuntime()]; // jsxLocPlugin() foi removido daqui
 
 export default defineConfig({
   plugins,
